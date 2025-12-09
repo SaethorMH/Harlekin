@@ -1,0 +1,45 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/************ Farver **************/
+html {
+  --dark-green: #0c362b;
+  --light-green: #5f857b;
+  --cream: #fff0b6;
+  --orange: #ff9000;
+  --black: #101010;
+  --white: #ffffff;
+}
+
+/*********** h1 h2 h3 p ************/
+h1 {
+  font-family: Pacifico;
+  font-size: 2.8rem;
+}
+
+h2,
+h3 {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+p {
+  font-family: Helvetica, sans-serif;
+  /* transform: scaleX(0.8); */
+  font-weight: 500;
+  font-size: 1.2rem;
+}
