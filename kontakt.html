@@ -17,12 +17,76 @@
     <link rel="stylesheet" href="./styles/kontakt.css">
 </head>
 
-<body>
+<body id="kontakt_side">
     <header>
     </header>
 
+
+
+
+
+
     <main>
-        <h1>Dette er Om os/kontakt</h1>
+        <div class="kontakt_layout">
+            <div class="hvad">
+                <h2>Spørgsmål?</h2>
+                <h3>Hos Harlekin dyrecenter er dyrene øverst i fødekæden!</h3>
+                <p>Vi svare på alle dine spørgsmål omkring dyr og tilbehør.</p>
+            </div>
+
+            <div class="kontakt_box">
+                <div class="form_grp">
+                    <label for="first_name">Fornavn</label>
+                    <input type="text" id="first_name" name="first_name" aria-activedescendant="fname-error" required>
+                    <p class="error-massage" id="fname-error">Udfyld venligst felt</p>
+                </div>
+
+                <div class="form_grp">
+                    <label for="last_name">Efternavn</label>
+                    <input type="text" id="last_name" name="last_name" aria-activedescendant="lname-error" required>
+                    <p class="error-massage" id="lname-error">Udfyld venligst felt</p>
+                </div>
+
+                <div class="form_grp">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" aria-describedby="email-error" required>
+                    <p class="error-massage" id="email-error">Udfyld venligst felt</p>
+                </div>
+
+                <div class="form_grp">
+                    <label for="massage">Din besked</label>
+                    <textarea name="massage" id="massage" maxlength="750" rows="6" cols="30"
+                        placeholder="Skriv din henvendelse her"></textarea>
+                </div>
+
+                <div id="max_tegn">0 / 750 tegn</div>
+
+                <div class="form_grp">
+                    <label for="accept_terms">
+                        <input type="checkbox" id="accept_terms" name="accept_terms" value="yes"
+                            aria-describedby="terms-error" required />
+
+                        Accept terms
+                    </label>
+                    <p class="error-message" id="terms-error">Please tick the box</p>
+                </div>
+
+                <div class="send_btn">
+                    <button>Send</button>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            const textarea = document.getElementById('message');
+            const charCount = document.getElementById('max_tegn');
+
+            textarea.addEventListener('input', function () {
+                const count = this.value.length;
+                max_tegn.textContent = count + ' / 750 characters';
+            });
+        </script>
     </main>
 
 
