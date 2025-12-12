@@ -102,6 +102,10 @@ header {
 .menu a:hover {
   color: #fff0b6;
 }
+details {
+  text-align: right;
+  color: var(--white);
+}
 
 /**************logo****************/
 .logo img {
