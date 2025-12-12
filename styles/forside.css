@@ -1,0 +1,143 @@
+.grid_2-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid_2-3 img {
+  padding: 20px;
+  margin-top: 5px;
+}
+
+#arrowIcon {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  background-color: #fff0b6;
+}
+
+.grid_2-3 h1 {
+  color: #0c362b;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.grid_2-3 p {
+  background-color: #ff9000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0px 20px 10px 20px;
+}
+
+.logo img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+  justify-content: left;
+  width: 30%;
+}
+
+/************billede med papegøjer***************/
+
+.forsidepar {
+  opacity: 60%;
+}
+.textbox h1 {
+  color: #ffffff;
+}
+
+.textbox p {
+  color: #ffffff;
+}
+
+/**************åbningstider****************/
+
+.åbningstider {
+  background-color: #5f857b;
+  padding: 50px;
+}
+
+.åbningstider h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.åbningstider-box h1 {
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.åbningstider-box {
+  border: 12px solid #f39c12; /* orange farve ligesom billedet */
+  border-radius: 40px; /* runde hjørner */
+  padding: 40px; /* luft indeni boksen */
+  width: fit-content; /* boksen følger indholdets bredde */
+  margin: 60px auto; /* centrer boksen */
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #5f857b;
+  line-height: 60px;
+}
+
+/**************footer**************/
+
+footer {
+  background-color: #0c362b;
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+footer h3 {
+  display: flex;
+  color: #ffffff;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+footer p {
+  color: #ffffff;
+  padding: 30px;
+  line-height: 0.5px;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column; /* stabler kontaktpunkterne */
+  gap: 2px;
+}
+
+.kontakt div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.kontakt img {
+  padding: 10px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.fblogo img {
+  width: 42px;
+}
+
+.lille-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+  justify-content: left;
+  width: 50%;
+  padding: 30px;
+}
