@@ -103,6 +103,16 @@ header {
   color: #fff0b6;
 }
 
+/**************logo****************/
+.logo img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+  justify-content: left;
+  width: 30%;
+}
+
 /**************footer**************/
 
 footer {
