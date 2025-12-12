@@ -1,0 +1,176 @@
+#kontakt_side {
+  background-color: #0c362b;
+}
+
+.kontakt_layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.hvad {
+  grid-column: 2/4;
+
+  color: #fff;
+  h2 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  h3 {
+    font-size: small;
+  }
+  p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: small;
+  }
+}
+
+.kontakt_box {
+  background-color: #5f857b;
+  padding: 20px;
+  border-radius: 25px;
+
+  grid-column: 2/4;
+}
+
+/*********** Besked box style *************/
+/* CSS Starter er tilføjet */
+/* Generelle styles */
+input {
+  border: 1px solid #ccc;
+  padding: 0.25rlh;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px #0001;
+}
+
+button {
+  border: 1px solid #ffffff00;
+  background-color: #ff9000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.5rlh 1rlh;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.error-message {
+  color: darkred;
+}
+
+/* Form layout */
+form {
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+
+  .form_grp {
+    display: grid;
+    gap: 0.1rlh;
+  }
+
+  label:has(input) {
+    display: flex;
+    align-items: center;
+    gap: 0.25rlh;
+    justify-self: start;
+  }
+}
+
+/* Pseudo-classes */
+:focus-visible {
+  /* virker til både knapper og input-felter, select, textarea, links mm. */
+  outline: 2px solid slateblue;
+  outline-offset: 1px;
+}
+/* Hover-styles */
+button:hover {
+  background: #222;
+}
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: 0.98;
+}
+
+/* Valideringsregler */
+/* Skjul fejlmeddelelsen som standard */
+.error-message {
+  display: none;
+}
+.form-group:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+/* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
+.form-group:has(:user-invalid) {
+  input {
+    outline: 3px solid #f005;
+    border-color: darkred;
+  }
+  /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
+  .error-message {
+    display: block;
+  }
+}
+
+/* Demo layout
+body {
+  padding: 2rlh;
+  display: grid;
+  gap: 2rlh;
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+
+section {
+  display: grid;
+  gap: 1rlh;
+  align-content: start;
+}
+
+.output div {
+  background: #f5f5f5;
+  padding: 1rlh;
+  border-radius: 6px;
+  display: grid;
+  gap: 0.5rlh;
+}
+
+.form_grp p {
+  display: none;
+}
+
+.form_grp {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  display: block;
+}
+
+input {
+  display: block;
+}
+
+#max_tegn {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+#accept_terms {
+  padding-bottom: 5px;
+}
+
+/****** Baggrund Kontakt ******/
+#kontakt_side {
+  background: linear-gradient(165deg, #1a4d3e 0%, #1a4d3e 60%, transparent 60%),
+    url("Flot_fisk.webp") bottom right / cover no-repeat #fff0b6;
+
+  padding-bottom: 30px;
+}
