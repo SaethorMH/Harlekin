@@ -169,6 +169,7 @@ input {
 
 /****** Baggrund Kontakt ******/
 #kontakt_side {
+  background-image: url("Flot_fisk.webp");
   background: linear-gradient(165deg, #1a4d3e 0%, #1a4d3e 60%, transparent 60%),
     url("Flot_fisk.webp") bottom right / cover no-repeat #fff0b6;
 
