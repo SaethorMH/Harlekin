@@ -1,0 +1,74 @@
+.info-1_1 {
+  background-color: #5f857b;
+  padding: 30px;
+}
+
+.info-1_1 img {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.yellow-info-1_1 {
+  background-color: #fff0b6;
+  padding: 30px;
+}
+
+.yellow-info-1_1 img {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.facade {
+  opacity: 0.6;
+}
+
+body {
+  background-color: #5f857b;
+}
+
+h1 {
+  text-align: center;
+  color: #fff0b6;
+}
+
+h3 {
+  text-align: center;
+}
+
+/************ cta button ******************/
+
+.cta_btn {
+  background-color: #ff9000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  width: fit-content;
+  display: block;
+  margin: 0 auto; /* centrerer knappen */
+}
+
+.cta_btn {
+  text-decoration: none;
+}
+
+/* --- Responsiv til desktop --- */
+@media (min-width: 840px) {
+  .info-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .yellow-info-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 50px;
+    gap: 40px;
+  }
+}
