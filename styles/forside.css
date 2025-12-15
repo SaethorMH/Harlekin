@@ -269,4 +269,7 @@ footer p {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+  #bakke {
+    grid-column: 1/3;
+  }
 }
