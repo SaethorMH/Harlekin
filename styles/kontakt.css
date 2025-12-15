@@ -5,7 +5,6 @@
 .kontakt_layout {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
-  padding-bottom: 30%;
 }
 
 .hvad {
@@ -15,6 +14,7 @@
   h2 {
     padding-bottom: 10px;
     padding-top: 10px;
+    color: #fff0b6;
   }
 
   h3 {
@@ -24,7 +24,13 @@
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: small;
+    line-height: 160%;
   }
+}
+
+.h3_box {
+  color: #fff0b6;
+  font-size: large;
 }
 
 .kontakt_box {
@@ -57,6 +63,16 @@ button {
 
 .error-message {
   color: darkred;
+}
+
+imput:user-invalid {
+  border-color: darkred;
+  background-color: #fff;
+}
+
+input:user-valid {
+  border-color: green;
+  background-color: #fff;
 }
 
 /* Form layout */
@@ -160,9 +176,10 @@ input {
 }
 
 /****** Baggrund Kontakt ******/
-#kontakt_side {
-  background-image: url("Flot_fisk.webp");
-  background: linear-gradient(165deg, #1a4d3e 0%, #1a4d3e 60%, transparent 60%), url("Flot_fisk.webp") bottom right / cover no-repeat #fff0b6;
+.kontakt_side {
+  background-color: #0c362b;
+  /* background: linear-gradient(165deg, #1a4d3e 0%, #1a4d3e 60%, transparent 60%),
+    url("Flot_fisk.webp") bottom right / cover no-repeat #fff0b6; */
 }
 
 @media (min-width: 840px) {
