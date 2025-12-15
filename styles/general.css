@@ -241,6 +241,24 @@ footer p {
   }
 }
 
+/******************* animation linje ****************/
+@keyframes site-progress {
+  from {
+    scale: 0 1;
+  }
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  block-size: 6px;
+  background-color: #ff9000;
+  z-index: 1;
+
+  animation: site-progress linear;
+  transform-origin: 0;
+  animation-timeline: scroll();
 /****** Video på index ******/
 video {
   width: 100%;
