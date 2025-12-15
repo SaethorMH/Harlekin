@@ -304,6 +304,7 @@ html::before {
   animation: site-progress linear;
   transform-origin: 0;
   animation-timeline: scroll();
+}
 /****** Video på index ******/
 video {
   width: 100%;
