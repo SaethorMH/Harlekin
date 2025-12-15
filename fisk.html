@@ -13,10 +13,11 @@
 
 
     <title>Harlekin - Fisk</title>
-    <link rel="stylesheet" href="./styles/fisk.css">
+
     <link rel="stylesheet" href="./styles/general.css">
 
-
+    <link rel="stylesheet" href="./styles/dyrLayout.css">
+    <link rel="stylesheet" href="./styles/fisk.css">
 
 </head>
 
@@ -32,24 +33,12 @@
             <ul class="menu">
                 <li><a href="kontakt.html">Kontakt</a></li>
                 <li><a href="index.html#abningstider">Åbningstider</a></li>
-                <li>
-                    <details name="dyr">
-                        <summary>
-                            <h3>Alle dyr</h3>
-                        </summary>
-                        <div>
-                            <ul>
-                                <li>
-                                    <a href=" fugle.html">Fugle</a>
-                                </li>
-                                <li>
-                                    <a href="fisk.html">Fisk</a>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </details>
+                <li class="dropdown">
+                    <a href="#">Alle Dyr</a>
+                    <div class="dyremenu">
+                        <a href=" fugle.html">Fugle</a>
+                        <a href="fisk.html">Fisk</a>
+                    </div>
                 </li>
                 <li><a href="info.html">Om os</a></li>
             </ul>
@@ -62,10 +51,167 @@
     </header>
 
     <main>
-        <h1>Dette er fiske siden</h1>
-        <h2>Lidt h2 txt</h2>
-        <h3>lidt h3 txt</h3>
-        <p>Liiidt en dudtiaspeokrpqk p txt</p>
+        <section>
+            <div class="grid_1-2">
+                <div id="firstImg"><img src="./img/flot_fisk.webp" alt="Billede af klovnepapegøje">
+                </div>
+                <div id="firstText">
+                    <h1>Fisk</h1>
+                    <p>Fisk, foder og gode tips</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="para">
+                <h2>
+                    Kæmpe udvalg
+                </h2>
+                <div class="grid_1-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit obcaecati, et pariatur eum
+                        perferendis
+                        molestias minus aliquam incidunt quam deleniti sapiente impedit, veniam doloremque odit autem
+                        est
+                        nesciunt veritatis minima.</p>
+                    <div>
+                        <img id="tFisk" src="./img/tFisk1.png" alt="fisk">
+                        <img id="tFisk2" src="./img/tFisk2.png" alt="fisk">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="container">
+                <ul id="card1" class="card">
+                    <div class="card-body">
+                        <div>
+                            <h2>Fisk 1</h2>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi neque veniam
+                                reprehenderit
+                                ea vel laboriosam illum vero explicabo eius obcaecati tempore similique totam,
+                                blanditiis
+                                sequi vitae aperiam, quae ex id.</p>
+                        </div><img src="./img/flot_fisk.webp" alt="">
+
+                        <a href="#" class="cta_btn cardbutton">Click her!</a>
+                    </div>
+                </ul>
+                <ul id="card2" class="card">
+                    <div class="card-body">
+                        <div>
+                            <h2>Fisk 2</h2>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi neque veniam
+                                reprehenderit
+                                ea vel laboriosam illum vero explicabo eius obcaecati tempore similique totam,
+                                blanditiis
+                                sequi vitae aperiam, quae ex id.</p>
+                        </div><img src="./img/flot_fisk.webp" alt="">
+
+                        <a href="#" class="cta_btn cardbutton">Click her!</a>
+                    </div>
+                </ul>
+                <ul id="card3" class="card">
+                    <div class="card-body">
+                        <div>
+                            <h2>Fisk 3</h2>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi neque veniam
+                                reprehenderit
+                                ea vel laboriosam illum vero explicabo eius obcaecati tempore similique totam,
+                                blanditiis
+                                sequi vitae aperiam, quae ex id.</p>
+                        </div><img src="./img/flot_fisk.webp" alt="">
+
+                        <a href="#" class="cta_btn cardbutton">Click her!</a>
+                    </div>
+                </ul>
+                <ul id="card4" class="card">
+                    <div class="card-body">
+                        <div>
+                            <h2>Fisk4</h2>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi neque veniam
+                                reprehenderit
+                                ea vel laboriosam illum vero explicabo eius obcaecati tempore similique totam,
+                                blanditiis
+                                sequi vitae aperiam, quae ex id.</p>
+                        </div><img src="./img/flot_fisk.webp" alt="">
+
+                        <a href="#" class="cta_btn cardbutton">Click her!</a>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <!-- <section>
+                <div class="grid_2-1">
+                    <div class="flex_down">
+                        <div>
+                            <h2>Overskrift</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, ipsam harum, perspiciatis
+                                unde
+                                fugit maxime beatae fugiat, dignissimos impedit voluptas similique molestiae quod quos
+                                consequatur quisquam. Soluta, architecto fugiat. Tempora.</p>
+    
+    
+                        </div>
+    
+                        <div>
+                            <h2>Overskrift 2</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, omnis odio nostrum velit
+                                molestiae ipsam aliquid inventore id possimus quo neque fugiat molestias, quas sit ab,
+                                facere
+                                eligendi quis debitis.</p>
+                        </div>
+                        <div>
+                            <h2>Overskrift 2</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, omnis odio nostrum velit
+                                molestiae ipsam aliquid inventore id possimus quo neque fugiat molestias, quas sit ab,
+                                facere
+                                eligendi quis debitis.</p>
+                        </div>
+    
+                    </div>
+                    <div class="flex_down">
+                        <img class="sideImg" src="./img/flot_fisk.webp" alt="anden papegøje">
+                        <img class="sideImg" src="./img/flot_fisk.webp" alt="anden papegøje">
+                        <img class="sideImg" src="./img/flot_fisk.webp" alt="anden papegøje">
+    
+                    </div>
+    
+                </div>
+            </section> -->
+
+        <section>
+            <div class="grid_2-2-1-1">
+                <div class="grid2211Img">
+                    <img src="./img/flot_fisk.webp" alt="fuglen">
+                </div>
+                <div class="grid2211h2">
+                    <h2>Næst sidste overskrift</h2>
+                </div>
+                <div class="overlapText">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique itaque libero
+                        dignissimos tempora veritatis, assumenda nesciunt omnis cumque dolores quae, maiores reiciendis
+                        consequatur aliquam sunt distinctio neque deserunt. Autem.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Husk nu at passe på den</h2>
+            </div>
+
+
+        </section>
+
     </main>
 
 
@@ -102,6 +248,7 @@
                     <p>harlekindyrecenter.nrb</p>
                 </div>
                 <h3>Adresse</h3>
+
                 <div>
                     <img src="ICONS/location.svg" alt="location">
                     <p>Nørrebrogade 58, 2200 København N.</p>
