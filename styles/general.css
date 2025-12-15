@@ -23,7 +23,12 @@ html {
 /************ cta button ******************/
 
 .cta_btn {
-  display: block;
+  /* display: block; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
   background-color: var(--orange);
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
@@ -41,6 +46,12 @@ html {
   color: #fff0b6;
 }
 
+.cta_btn .cta_arrow {
+  height: 10%;
+  height: auto;
+  display: inline-block;
+  z-index: 10;
+}
 /*********** h1 h2 h3 p ************/
 h1 {
   font-family: Pacifico;
