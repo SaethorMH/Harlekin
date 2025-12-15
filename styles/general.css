@@ -23,18 +23,21 @@ html {
 /************ cta button ******************/
 
 .cta_btn {
-  display: flex;
   background-color: var(--orange);
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
   color: #ffffff;
-  padding: 10px;
+  padding: 8px;
   border-radius: 8px;
   height: 20%;
 }
 
 .cta_btn {
   text-decoration: none;
+}
+
+a.cta_btn {
+  margin-right: 50px;
 }
 
 /*********** h1 h2 h3 p ************/
