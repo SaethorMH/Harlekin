@@ -285,3 +285,44 @@ footer div p {
     font-size: 24px;
   }
 }
+
+/******************* animation linje ****************/
+@keyframes site-progress {
+  from {
+    scale: 0 1;
+  }
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  block-size: 6px;
+  background-color: #ff9000;
+  z-index: 1;
+
+  animation: site-progress linear;
+  transform-origin: 0;
+  animation-timeline: scroll();
+/****** Video på index ******/
+video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video_og_logo {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.myvideo {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+  z-index: -1;
+}
+
+.logo_video {
+  z-index: 0;
+  grid-column: 2 / 3;
+  grid-row: 2 /3;
+}

@@ -1,6 +1,10 @@
 .info-1_1 {
-  background-color: #5f857b;
+  background-color: #fff0b6;
   padding: 30px;
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .info-1_1 img {
@@ -8,31 +12,49 @@
   margin-top: 20px;
 }
 
-.yellow-info-1_1 {
-  background-color: #fff0b6;
+.green-info-1_1 {
+  background-color: #5f857b;
   padding: 30px;
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
 }
 
-.yellow-info-1_1 img {
+.green-info-1_1 img {
   border-radius: 20px;
   margin-top: 20px;
 }
 
-.facade {
-  opacity: 0.6;
+.big_1 {
+  opacity: 0.8;
+  padding: 20px;
+  border-radius: 50px;
+  margin-bottom: 100px;
+}
+
+.big_2 {
+  opacity: 0.8;
+  padding: 20px;
+  border-radius: 50px;
+  margin-bottom: 100px;
 }
 
 body {
-  background-color: #5f857b;
+  background-color: #fff0b6;
 }
 
 h1 {
   text-align: center;
-  color: #fff0b6;
+  color: #5f857b;
 }
 
 h3 {
   text-align: center;
+}
+
+.info_kontakt {
+  padding: 80px;
+  background-color: #5f857b;
 }
 
 /************ cta button ******************/
@@ -54,6 +76,30 @@ h3 {
   text-decoration: none;
 }
 
+.cta_btn:hover {
+  background-color: #0c362b;
+  color: white;
+}
+
+/********* animation ***********/
+
+@keyframes clip-reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.big_2 {
+  animation: clip-reveal ease-in-out both;
+  animation-timeline: view();
+  animation-range: 20% 50%;
+}
+
 /* --- Responsiv til desktop --- */
 @media (min-width: 840px) {
   .info-1_1 {
@@ -61,14 +107,26 @@ h3 {
     grid-template-columns: 1fr 1fr;
     align-items: start;
     padding: 50px;
-    gap: 40px;
+    gap: 60px;
   }
 
-  .yellow-info-1_1 {
+  .green-info-1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
     padding: 50px;
-    gap: 40px;
+    gap: 60px;
+  }
+
+  .big_1 {
+    opacity: 0.8;
+    padding: 100px;
+    border-radius: 150px;
+  }
+
+  .big_2 {
+    opacity: 0.8;
+    padding: 100px;
+    border-radius: 150px;
   }
 }

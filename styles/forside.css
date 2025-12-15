@@ -6,6 +6,19 @@
 .grid_2-3 img {
   padding: 20px;
   margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+.grid_2-3 img:hover {
+  color: black;
+  transform: translateY(-20px);
+}
+
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background-color: #5f857b;
 }
 
 #arrowIcon {
@@ -37,35 +50,142 @@ html {
 
 /************billede med papegøjer***************/
 
-.forsidepar {
+.forsidepar img {
   opacity: 60%;
-}
-.textbox h1 {
-  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.textbox p {
-  color: #ffffff;
+.forsidepar {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tekst-ovenpaa {
+  position: absolute; /* Ligger ovenpå billedet */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centrerer teksten */
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 20px 20px;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  margin-top: 300px;
+}
+
+.tekst-ovenpaa h1 {
+  line-height: 80px;
+}
+
+/*************billede med hamster****************/
+
+.jago img {
+  opacity: 60%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5%;
+  margin: auto;
+  width: 50%;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.jago {
+  position: relative;
+  /*width: 100vw;
+  height: 100vh;*/
+  overflow: hidden;
+  background-color: #5f857b;
+  margin: 0 auto;
+}
+
+.tekst-ovenpaa2 {
+  position: absolute; /* Ligger ovenpå billedet */
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centrerer teksten */
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+/**************animation********/
+@keyframes site-progress {
+  from {
+    scale: 0 1;
+  }
+}
+
+@keyframes scale {
+  80% {
+    scale: 0.5;
+    opacity: 0.2;
+  }
+
+  100% {
+    scale: 0.5;
+    opacity: 0;
+  }
+}
+
+@keyframes slide-1 {
+  0% {
+    opacity: 0;
+    translate: -20vh;
+    rotate: -5deg;
+  }
+}
+
+@keyframes slide-2 {
+  0% {
+    opacity: 0;
+    translate: 20vh;
+    rotate: -5deg;
+  }
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  block-size: 4px;
+  background-color: #ffffff;
+
+  animation: site-progress linear;
+  transform-origin: 0;
+  animation-timeline: scroll();
 }
 
 /**************åbningstider****************/
 
-.åbningstider {
+.aabningstider {
   background-color: #5f857b;
   padding: 50px;
 }
 
-.åbningstider h1 {
+.aabningstider h1 {
   color: #ffffff;
   text-align: center;
 }
 
-.åbningstider-box h1 {
+.aabningstider-box h1 {
   color: #ffffff;
   margin-top: 50px;
 }
 
-.åbningstider-box {
+.aabningstider-box {
   border: 12px solid #f39c12; /* orange farve ligesom billedet */
   border-radius: 40px; /* runde hjørner */
   padding: 40px; /* luft indeni boksen */
@@ -76,4 +196,77 @@ html {
   text-align: center;
   background-color: #5f857b;
   line-height: 60px;
+}
+
+/**************footer**************/
+
+footer {
+  background-color: #0c362b;
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+footer h3 {
+  display: flex;
+  color: #ffffff;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+footer p {
+  color: #ffffff;
+  padding: 30px;
+  line-height: 0.5px;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column; /* stabler kontaktpunkterne */
+  gap: 2px;
+}
+
+.kontakt div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.kontakt img {
+  padding: 10px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.fblogo img {
+  width: 42px;
+}
+
+.lille-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+  justify-content: left;
+  width: 50%;
+  padding: 30px;
+}
+
+/*******************Desktop*****************/
+
+@media (min-width: 840px) {
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 840px) {
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
