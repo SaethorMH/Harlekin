@@ -48,15 +48,6 @@ html {
   margin: 0px 20px 10px 20px;
 }
 
-.logo img {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 1rem;
-  justify-content: left;
-  width: 30%;
-}
-
 /************billede med papegøjer***************/
 
 .forsidepar img {
