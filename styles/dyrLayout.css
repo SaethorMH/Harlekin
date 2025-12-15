@@ -18,7 +18,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(var(--cards), var(--cardHeight));
   gap: var(--cardMargin);
-  padding-bottom: calc(var(cards) * var(--cardTopPadding));
+  padding-bottom: calc(var(--cards) * var(--cardTopPadding));
   margin-bottom: var(--cardMargin);
 }
 #card1 {
@@ -46,12 +46,14 @@ body {
 }
 #card2 .card-body {
   background-color: var(--cream);
+  color: var(--dark-green);
 }
 #card3 .card-body {
   background-color: var(--light-green);
 }
 #card4 .card-body {
   background-color: var(--cream);
+  color: var(--dark-green);
 }
 .card-body {
   box-sizing: border-box;
@@ -63,6 +65,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  img {
+    border-radius: 20px;
+    margin: 5%;
+  }
+}
+
+.cta_btn {
+  padding: 5vw 10vw;
+  border: none;
+  margin: 10px;
+  border-radius: 40px;
 }
 
 .grid_1-2 {
@@ -140,14 +153,19 @@ body {
   padding: 20px;
 }
 
-.btn {
-  background-color: var(--orange);
-  color: var(--white);
-  width: 40vw;
-  height: 8vh;
-  border: none;
-  border-radius: 40px;
-}
-.btn::hover {
-  background-color: brown;
+/*********** DESKTOP *************/
+@media (min-width: 840px) {
+  main {
+    max-width: 1000px;
+    background-color: var(--dark-green);
+    margin: auto;
+  }
+  .card-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .cardbutton {
+    grid-column: 1/3;
+    margin: auto;
+  }
 }

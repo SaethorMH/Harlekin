@@ -23,23 +23,35 @@ html {
 /************ cta button ******************/
 
 .cta_btn {
+  /* display: block; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
   background-color: var(--orange);
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
   color: #ffffff;
-  padding: 8px;
+  margin: auto;
+  padding: 6px;
   border-radius: 8px;
-  height: 20%;
-}
+  text-align: center;
+  max-width: 20ch;
 
-.cta_btn {
   text-decoration: none;
 }
-
-a.cta_btn {
-  margin-right: 50px;
+.cta_btn:hover {
+  background-color: #ffa42e;
+  color: #fff0b6;
 }
 
+.cta_btn .cta_arrow {
+  height: 10%;
+  height: auto;
+  display: inline-block;
+  z-index: 10;
+}
 /*********** h1 h2 h3 p ************/
 h1 {
   font-family: Pacifico;
@@ -99,15 +111,42 @@ header {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
-  text-align: end;
+  text-align: center;
+}
+.menu li {
+  min-width: 10ch;
 }
 
 .menu a:hover {
   color: #fff0b6;
 }
+
 details {
   text-align: right;
   color: var(--white);
+}
+
+.dyremenu {
+  display: none;
+  position: absolute;
+  background-color: var(--orange);
+  z-index: 1;
+  /* place-self: center; */
+  /* top: 70px; */
+
+  width: 10ch;
+  border-radius: 0 0 10px 10px;
+  /* border: #0c362b solid 1px; */
+}
+.dropdown:hover .dyremenu {
+  display: block;
+}
+.dropdown:hover {
+  border-radius: 20px 20px 0 0;
+}
+.menu a:hover {
+  background-color: #ffae4a;
+  border-radius: 20px;
 }
 
 /**************logo****************/
@@ -140,7 +179,10 @@ footer h3 {
 footer p {
   color: #ffffff;
   padding: 30px;
-  line-height: 0.5px;
+  /* line-height: 0.5px; */
+}
+footer div p {
+  overflow-wrap: break-word;
 }
 
 .kontakt {
@@ -230,6 +272,9 @@ footer p {
     width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
+  }
+  .dyremenu {
+    width: 94%;
   }
 
   nav.active .menu li {
