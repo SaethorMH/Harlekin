@@ -141,6 +141,16 @@ button:active {
   .error-message {
     display: block;
   }
+
+  imput:user-invalid {
+    border-color: darkred;
+    background-color: #fff;
+  }
+
+  input:user-valid {
+    border-color: green;
+    background-color: #fff;
+  }
 }
 
 section {
@@ -212,7 +222,7 @@ input {
     grid-column: 4 / 6;
     grid-row: 1 / 2;
     max-width: 65%;
-    max-height: 85%;
+    max-height: 90%;
   }
 
   .kontakt_fotos {
@@ -233,5 +243,13 @@ input {
 
   .h3_box {
     color: #fff0b6;
+  }
+
+  #accept_terms {
+    margin-top: 10%;
+  }
+
+  .send_btn {
+    margin-top: 5%;
   }
 }
