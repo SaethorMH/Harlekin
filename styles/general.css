@@ -24,7 +24,7 @@ html {
 
 .cta_btn {
   /* display: block; */
-  display: inline-flex;
+  display: block;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
@@ -38,6 +38,7 @@ html {
   border-radius: 8px;
   text-align: center;
   max-width: 20ch;
+  margin: auto;
 
   text-decoration: none;
 }
@@ -162,7 +163,7 @@ details {
 /**************footer**************/
 
 footer {
-  background-color: #0c362b;
+  background-color: #0c362bfe;
   position: relative;
   color: white;
   text-align: center;
@@ -179,7 +180,6 @@ footer h3 {
 footer p {
   color: #ffffff;
   padding: 30px;
-  /* line-height: 0.5px; */
 }
 footer div p {
   overflow-wrap: break-word;
