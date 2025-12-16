@@ -162,6 +162,61 @@ html {
   line-height: 60px;
 }
 
+/**************footer**************/
+
+footer {
+  background-color: var(--dark-green);
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+footer h3 {
+  display: flex;
+  color: #ffffff;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+footer p {
+  color: #ffffff;
+  padding: 30px;
+  line-height: 0.5px;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column; /* stabler kontaktpunkterne */
+  gap: 2px;
+}
+
+.kontakt div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.kontakt img {
+  padding: 10px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.fblogo img {
+  width: 42px;
+}
+
+.lille-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+  justify-content: left;
+  width: 50%;
+  padding: 30px;
+}
+
 /*******************Desktop*****************/
 
 @media (min-width: 840px) {
