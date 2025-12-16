@@ -1,6 +1,9 @@
 body {
-  background-color: var(--cream);
+  background-color: var(--dark-green);
 }
 main {
-  color: var(--dark-green);
+  color: var(--white);
+}
+.lyssegroen {
+  background-color: var(--light-green);
 }
