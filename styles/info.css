@@ -1,10 +1,11 @@
 .info-1_1 {
-  background-color: #fff0b6;
+  background-color: var(--cream);
   padding: 30px;
   display: flex;
   gap: 80px;
   flex-direction: column;
   margin-bottom: 100px;
+  color: var(--dark-green);
 }
 
 .info-1_1 img {
@@ -13,11 +14,12 @@
 }
 
 .green-info-1_1 {
-  background-color: #5f857b;
+  background-color: var(--light-green);
   padding: 30px;
   display: flex;
   gap: 80px;
   flex-direction: column;
+  color: var(--white);
 }
 
 .green-info-1_1 img {
@@ -29,7 +31,6 @@
   opacity: 0.8;
   padding: 20px;
   border-radius: 50px;
-  margin-bottom: 100px;
 }
 
 .big_2 {
@@ -37,15 +38,17 @@
   padding: 20px;
   border-radius: 50px;
   margin-bottom: 100px;
+  display: none;
 }
 
 body {
-  background-color: #fff0b6;
+  background-color: var(--cream);
 }
 
 h1 {
   text-align: center;
-  color: #5f857b;
+  color: var(--light-green);
+  font-size: 5rem;
 }
 
 h3 {
@@ -54,16 +57,17 @@ h3 {
 
 .info_kontakt {
   padding: 80px;
-  background-color: #5f857b;
+  background-color: var(--light-green);
+  color: var(--white);
 }
 
 /************ cta button ******************/
 
 .cta_btn {
-  background-color: #ff9000;
+  background-color: var(--orange);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--white);
   padding: 10px;
   border-radius: 8px;
   margin-bottom: 50px;
@@ -77,8 +81,8 @@ h3 {
 }
 
 .cta_btn:hover {
-  background-color: #0c362b;
-  color: white;
+  background-color: var(--dark-green);
+  color: var(--white);
 }
 
 /********* animation ***********/
@@ -95,7 +99,7 @@ h3 {
 }
 
 .big_2 {
-  animation: clip-reveal ease-in-out both;
+  animation: clip-reveal 1s ease-in-out both;
   animation-timeline: view();
   animation-range: 20% 50%;
 }
@@ -128,5 +132,6 @@ h3 {
     opacity: 0.8;
     padding: 100px;
     border-radius: 150px;
+    display: block;
   }
 }
