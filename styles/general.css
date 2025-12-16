@@ -161,7 +161,7 @@ details {
   align-items: center;
   margin-left: 1rem;
   justify-content: left;
-  width: 20%;
+  height: 80px;
 }
 
 /**************footer**************/
@@ -187,6 +187,60 @@ footer p {
 }
 footer div p {
   overflow-wrap: break-word;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column; /* stabler kontaktpunkterne */
+  gap: 2px;
+}
+
+.kontakt div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.kontakt img {
+  padding: 10px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.fblogo img {
+  width: 42px;
+}
+
+.lille-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+  justify-content: left;
+  width: 50%;
+  padding: 30px;
+}
+/**************footer igen**************/
+
+footer {
+  background-color: var(--dark-green);
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+footer h3 {
+  display: flex;
+  color: #ffffff;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+footer p {
+  color: #ffffff;
+  padding: 30px;
+  line-height: 0.5px;
 }
 
 .kontakt {
@@ -292,10 +346,13 @@ footer div p {
 @media (min-width: 840px) {
   .kontakt {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 25rem;
+    div {
+      flex-basis: 33%;
+    }
   }
+
   section {
     max-width: 1200px;
     margin: auto;
