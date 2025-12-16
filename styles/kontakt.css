@@ -253,3 +253,8 @@ input {
     margin-top: 5%;
   }
 }
+#bakke {
+  position: relative;
+  margin-top: -10%;
+  z-index: 5;
+}
