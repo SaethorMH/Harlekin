@@ -89,7 +89,7 @@ body {
   color: var(--white);
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   padding-left: 5%;
 }
 #firstImg {
@@ -155,11 +155,6 @@ body {
 
 /*********** DESKTOP *************/
 @media (min-width: 840px) {
-  main {
-    max-width: 1000px;
-    background-color: var(--dark-green);
-    margin: auto;
-  }
   .card-body {
     display: grid;
     grid-template-columns: 1fr 2fr;

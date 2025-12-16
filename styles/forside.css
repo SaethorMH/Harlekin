@@ -201,7 +201,7 @@ html::before {
 /**************footer**************/
 
 footer {
-  background-color: #0c362b;
+  background-color: var(--dark-green);
   position: relative;
   color: white;
   text-align: center;
