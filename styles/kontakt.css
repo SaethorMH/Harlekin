@@ -5,7 +5,7 @@
 .kontakt_layout {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
-  padding-bottom: 30%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .hvad {
@@ -15,6 +15,7 @@
   h2 {
     padding-bottom: 10px;
     padding-top: 10px;
+    color: #fff0b6;
   }
 
   h3 {
@@ -24,7 +25,13 @@
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: small;
+    line-height: 160%;
   }
+}
+
+.h3_box {
+  color: #fff0b6;
+  font-size: large;
 }
 
 .kontakt_box {
@@ -33,6 +40,15 @@
   border-radius: 25px;
 
   grid-column: 2/4;
+  grid-row: 2 /4;
+}
+
+.kontakt_fotos {
+  display: block;
+  grid-column: 1 / 5;
+  grid-row: 3 / 5;
+  order: 1;
+  z-index: -1;
 }
 
 /*********** Besked box style *************/
@@ -57,6 +73,16 @@ button {
 
 .error-message {
   color: darkred;
+}
+
+imput:user-invalid {
+  border-color: darkred;
+  background-color: #fff;
+}
+
+input:user-valid {
+  border-color: green;
+  background-color: #fff;
 }
 
 /* Form layout */
@@ -115,6 +141,16 @@ button:active {
   .error-message {
     display: block;
   }
+
+  imput:user-invalid {
+    border-color: darkred;
+    background-color: #fff;
+  }
+
+  input:user-valid {
+    border-color: green;
+    background-color: #fff;
+  }
 }
 
 section {
@@ -160,15 +196,17 @@ input {
 }
 
 /****** Baggrund Kontakt ******/
-#kontakt_side {
-  background-image: url("Flot_fisk.webp");
-  background: linear-gradient(165deg, #1a4d3e 0%, #1a4d3e 60%, transparent 60%), url("Flot_fisk.webp") bottom right / cover no-repeat #fff0b6;
+.kontakt_side {
+  background-color: #0c362b;
+  /* background: linear-gradient(165deg, #1a4d3e 0%, #1a4d3e 60%, transparent 60%),
+    url("Flot_fisk.webp") bottom right / cover no-repeat #fff0b6; */
 }
 
 @media (min-width: 840px) {
   .kontakt_layout {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
 
     padding-top: 5%;
     padding-bottom: 10%;
@@ -176,13 +214,22 @@ input {
 
   .hvad {
     grid-column: 2 / 3;
+    grid-row: 1 / 1;
     align-items: center;
-    align-self: center;
   }
 
   .kontakt_box {
     grid-column: 4 / 6;
+    grid-row: 1 / 2;
     max-width: 65%;
+    max-height: 90%;
+  }
+
+  .kontakt_fotos {
+    display: block;
+    grid-column: 1 / 6;
+    grid-row: 1 / 3;
+    z-index: -1;
   }
 
   h2 {
@@ -191,10 +238,18 @@ input {
   }
 
   h3 {
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   .h3_box {
     color: #fff0b6;
+  }
+
+  #accept_terms {
+    margin-top: 10%;
+  }
+
+  .send_btn {
+    margin-top: 5%;
   }
 }

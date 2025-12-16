@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./styles/kontakt.css">
 </head>
 
-<body id="kontakt_side">
+<body class="kontakt_side">
     <header>
         <div class="logo">
             <a href="index.html">
@@ -29,12 +29,25 @@
             <ul class="menu">
                 <li><a href="kontakt.html">Kontakt</a></li>
                 <li><a href="index.html#abningstider">Åbningstider</a></li>
-                <li class="dropdown">
-                    <a href="#">Alle Dyr</a>
-                    <div class="dyremenu">
-                        <a href=" fugle.html">Fugle</a>
-                        <a href="fisk.html">Fisk</a>
-                    </div>
+                <li>
+                    <details name="dyr">
+                        <summary>
+                            <h3>Alle dyr</h3>
+                        </summary>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href=" fugle.html">Fugle</a>
+                                </li>
+                                <li>
+                                    <a href="fisk.html">Fisk</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </details>
+
                 </li>
                 <li><a href="info.html">Om os</a></li>
             </ul>
@@ -104,7 +117,12 @@
                 </div>
 
             </div>
+            <div class="kontakt_fotos">
+                <img src="img/Kontakt_fiskene.webp" alt="">
+                <img src="img/Kontakt_fugl.webp" alt="">
+            </div>
         </div>
+
 
         <script>
             const textarea = document.getElementById('message');
