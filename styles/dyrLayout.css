@@ -147,6 +147,7 @@ body {
     margin-top: 100px;
   }
 } */
+/****** Last grid********/
 .grid_2-2-1-1 {
   border-radius: 20px 20px 0px 0px;
   padding-top: 50px;
@@ -159,6 +160,7 @@ body {
 .grid2211h2 {
   grid-column: 1/4;
   grid-row: 1;
+
   text-align: center;
   place-content: center;
 }
