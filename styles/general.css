@@ -79,9 +79,6 @@ p {
 
 /******************menu*******************/
 header {
-  position: relative;
-  margin: 0px 50px;
-  top: 10px;
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -91,10 +88,24 @@ header {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, Helvetica, sans-serif;
 
-  border-radius: 20px;
   max-height: 75px;
 }
+@media (min-width: 840px) {
+  header {
+    position: relative;
+    margin: 0px 50px;
+    top: 10px;
+    border-radius: 20px;
+  }
+  .menu {
+    border-radius: 0px;
+  }
+  .video_og_logo {
+    position: relative;
 
+    top: -80px;
+  }
+}
 .menu {
   display: flex;
   list-style: none;
@@ -385,9 +396,6 @@ video {
 }
 
 .video_og_logo {
-  position: relative;
-
-  top: -80px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 2fr 1fr;
